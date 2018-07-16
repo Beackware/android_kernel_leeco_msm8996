@@ -132,7 +132,7 @@ static char *mode_text[] = {
 static int __qpnp_typec_read(struct spmi_device *spmi, u8 *val, u16 addr,
 			int count)
 {
-	int rc;
+	int rc = 0;
 
 	rc = spmi_ext_register_readl(spmi->ctrl, spmi->sid, addr, val, count);
 	if (rc)

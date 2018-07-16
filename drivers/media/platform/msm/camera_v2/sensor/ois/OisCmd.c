@@ -3675,7 +3675,7 @@ void	SetDOFSTDAF_WT( unsigned char ucSetDat )
 
 void SmoothSvrOff(void)
 {
-	unsigned short	UsStep = 0x0100, UcCnt;
+	unsigned short	UsStep = 0x0100, UcCnt = 0;
 
 	unsigned short	UsDrv;
 
