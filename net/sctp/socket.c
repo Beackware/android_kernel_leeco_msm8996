@@ -4440,9 +4440,6 @@ int sctp_do_peeloff(struct sock *sk, sctp_assoc_t id, struct socket **sockp)
 	if (!net_eq(current->nsproxy->net_ns, sock_net(sk)))
 		return -EINVAL;
 
-	if (!asoc)
-		return -EINVAL;
-
 	/* If there is a thread waiting on more sndbuf space for
 	 * sending on this asoc, it cannot be peeled.
 	 */
